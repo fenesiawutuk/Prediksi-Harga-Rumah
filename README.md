@@ -12,10 +12,10 @@ Sumber data yang digunakan dalam proyek ini adalah Dataset Harga Rumah Daerah Ja
 
 **2.Cleaning Data:** Setelah pemahaman awal, dilakukan fase Data Cleaning. Dalam tahap ini, fokus pada peningkatan kualitas data dengan menghapus missing value dan data duplikat yang ditemukan dalam dataset. Selain itu, penamaan variabel tertentu diubah (renaming) untuk menjaga konsistensi dan kemudahan interpretasi selama analisis lebih lanjut.
 
-**3.Preprocessing Data:** Pada tahapan ni dilakukan label encoder yaitu mengubah data kategorikal ke dalam bentuk angka. Fitur seperi Garage_Availabel diubah menggunakan Label Encoder, di mana nilai 'ada' diubah menjadi 1 dan 'tidak ada' menjadi 0. Data kemudian dipisahkan menjadi Training Set dan Testing Set dengan porsi Test Size sebesar 0.1.
+**3.Preprocessing Data:** Pada tahapan ni dilakukan label encoder yaitu mengubah data kategorikal ke dalam bentuk angka. Fitur seperi Garage_Availabel diubah menggunakan Label Encoder, di mana nilai 'ada' diubah menjadi 0 dan 'tidak ada' menjadi 1. Data kemudian dipisahkan menjadi data latih dan data uji dengan test size sebesar 0.1.
 
 **4.Training and Evaluation Model:** Model dilatih menggunakan algoritma Random Forest dengan n_estimators 200. Setelah model dilatih, kinerjanya dievaluasi menggunakan metrik yaitu MSE (Mean Squared Error) dan R^2. 
 
 **5.Testing:** Setelah model dilatih dan dievaluasi, selanjutnya adalah melakukan pengujian dengan data baru yang belum pernah dimuat dalam pelatihan model.
 
-**6.Visualization Model Prediction:** Tahap akhir, memvisualisasikan hasil prediksi model untuk melihat perbandingan antara model actual dan model prediksi menggunakan random forest.
+**6.Visualization Model Prediction:** Tahap akhir, memvisualisasikan hasil prediksi model untuk melihat perbandingan antara model aktual dan model prediksi menggunakan Random Forest.
